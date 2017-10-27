@@ -114,7 +114,7 @@ arrested.
 > |              | Relative SVG | Relative PNG | Absolute SVG | Absolute PNG |
 > |:-------------|:------------:|:------------:|:------------:|:------------:|
 > | *Referenced* | ![][rel-svg] | ![][rel-png] | ![][abs-svg] | ![][abs-png] |
-> | *Inlined*    | ![](image.svg) | ![](image.png) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png) |
+> | *Inlined*    | ![](image.svg?sanitize=true) | ![](image.png) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg?sanitize=true) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png) |
 > |              |              |              |              |              |
 
 Some might say that the problem is that you are using SVG, but that would be a
@@ -230,7 +230,7 @@ letting them go to move on. **Sure, enough of that, thanks, time for action.**
 [abs-png]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png
 [abs-svg]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg?sanitize=true
 [gh-png]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png
-[gh-svg]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svgv
+[gh-svg]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg?sanitize=true
 [raw-png]: https://rawgit.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png
 [raw-svg]: https://rawgit.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg
 [cdn-png]: https://cdn.rawgit.com/code-therapy/packages-with-readme-relative-images/636b6b8616eed31d6333ce98aa414ccd9a47b477/image.png
