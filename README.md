@@ -226,11 +226,11 @@ letting them go to move on. **Sure, enough of that, thanks, time for action.**
 
 
 [rel-png]: image.png
-[rel-svg]: image.svg
+[rel-svg]: image.svg?sanitize=true
 [abs-png]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png
-[abs-svg]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg
+[abs-svg]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg?sanitize=true
 [gh-png]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png
-[gh-svg]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg
+[gh-svg]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svgv
 [raw-png]: https://rawgit.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png
 [raw-svg]: https://rawgit.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg
 [cdn-png]: https://cdn.rawgit.com/code-therapy/packages-with-readme-relative-images/636b6b8616eed31d6333ce98aa414ccd9a47b477/image.png
