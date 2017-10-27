@@ -32,17 +32,8 @@ cut your losses just to keep things simple, as I did. Sparing details, you are
 essentially choosing between hard-linked githubusercontent or rawgit URLs which
 don't fork or relative paths and maybe subtrees and those fork ugly but fork.
 
-*Quick Comparison:*
-
-> |              | Relative SVG | Relative PNG | Absolute SVG | Absolute PNG |
-> |:-------------|:------------:|:------------:|:------------:|:------------:|
-> | *Referenced* | ![][rel-svg] | ![][rel-png] | ![][abs-svg] | ![][abs-png] |
-> | *Inlined*    | ![](image.svg) | ![](image.png) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png) |
-> |              |              |              |              |              |
-
-While some might decide to avoid SVG, but this is besides the point! So between
-relative and absolute, you would naturally opt for relative you repeat this to
-yourself a few times so that it sticks, before moving on:
+So between relative and absolute, you would naturally opt for relative and you
+repeat this to yourself a few times so that it sticks, before moving on:
 
 > I promise to only use relative paths from now on!
 
@@ -116,6 +107,18 @@ will be as bland and possible and if anyone touches my assets I will have them
 arrested.
 
 ## **Reflection:**
+
+
+*Quick Comparison:*
+
+> |              | Relative SVG | Relative PNG | Absolute SVG | Absolute PNG |
+> |:-------------|:------------:|:------------:|:------------:|:------------:|
+> | *Referenced* | ![][rel-svg] | ![][rel-png] | ![][abs-svg] | ![][abs-png] |
+> | *Inlined*    | ![](image.svg) | ![](image.png) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png) |
+> |              |              |              |              |              |
+
+Some might say that the problem is that you are using SVG, but that would be a
+little embarrasing to say out loud!
 
 Some people may eventually hate that last bit and decide to do some mindfulness
 and reflection, and I happen to be one of those people.
