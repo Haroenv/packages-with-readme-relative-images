@@ -1,7 +1,7 @@
 {
     "name": "@code-therapy/packages-with-readme-relative-images",
     "description": "The time you included that image in your README.md from a relative path on GitHub and then published to NPM!",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
     "publishConfig": {
         "access": "public"
