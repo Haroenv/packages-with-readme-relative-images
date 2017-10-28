@@ -1,5 +1,21 @@
 # Publishing a README using relative image paths from GitHub to NPM!
 
+---
+
+**SOLVED:** A previous solution that made it possible to render SVG files on
+GitHub (using relative URLs) seems to work on raw.githubusercontent.com by
+making it correctly set the Content-Type. So, in order to render SVG images that
+use relative paths in markdown and have them render properly on NPM & Yarn, you
+simply have to append this query to your relative path: `?sanitize=true`.
+
+---
+
+**UPDATE:** *Images have been updated to show the difference between unsanitized and
+sanitized (adding `?sanitize=true`) for svg images with relative & absolute URLs
+served from GitHub.*
+
+---
+
 ## **Chapter 1:** Authoring
 
 In GitHub-Flavoured Markdown (GFM), when you want to include an image using its
@@ -109,12 +125,13 @@ arrested.
 ## **Reflection:**
 
 
-*Quick Comparison:*
+*Quick Comparison: *
 
-> |              | Relative SVG | Relative PNG | Absolute SVG | Absolute PNG |
+> |              | Relative SVG *fixed* | Relative PNG | Absolute SVG *fixed* | Absolute PNG |
 > |:-------------|:------------:|:------------:|:------------:|:------------:|
 > | *Referenced* | ![][rel-svg] | ![][rel-png] | ![][abs-svg] | ![][abs-png] |
-> | *Inlined*    | ![](image.svg?sanitize=true) | ![](image.png) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg?sanitize=true) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png) |
+> | *Inlined unsanitized*    | ![](image.svg) | ![](image.png) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png) |
+> | *Inlined sanitized*    | ![](image.svg?sanitize=true) | ![](image.png) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg?sanitize=true) | ![](https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png) |
 > |              |              |              |              |              |
 
 Some might say that the problem is that you are using SVG, but that would be a
@@ -211,7 +228,8 @@ letting them go to move on. **Sure, enough of that, thanks, time for action.**
 
   > |                       |      SVG     |      PNG     |
   > |:----------------------|:------------:|:------------:|
-  > | raw.githubudercontent | ![][gh-svg]  | ![][gh-png]  |
+  > | raw.githubusercontent *unsanitized* | ![][gh-svg-1]  | ![][gh-png]  |
+  > | raw.githubusercontent *sanitized* | ![][gh-svg]  | ![][gh-png]  |
   > | rawgit                | ![][raw-svg] | ![][raw-png] |
   > | cdn.rawgit            | ![][cdn-svg] | ![][cdn-png] |
   > |                       |              |              |
@@ -230,6 +248,7 @@ letting them go to move on. **Sure, enough of that, thanks, time for action.**
 [abs-png]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png
 [abs-svg]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg?sanitize=true
 [gh-png]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png
+[gh-svg-1]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg
 [gh-svg]: https://raw.githubusercontent.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg?sanitize=true
 [raw-png]: https://rawgit.com/code-therapy/packages-with-readme-relative-images/HEAD/image.png
 [raw-svg]: https://rawgit.com/code-therapy/packages-with-readme-relative-images/HEAD/image.svg
